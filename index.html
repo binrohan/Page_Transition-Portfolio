@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- My CSS links -->
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/queries.css">
+  <!-- Vendors CSS links -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendors/css/w3.css">
+  <link rel="stylesheet" href="vendors/css/animations.css">
+  <link rel="stylesheet" href="vendors/css/component.css">
+  <link rel="stylesheet" href="vendors/css/all.css">
+  <link rel="stylesheet" href="vendors/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/css/owl.theme.default.min.css">
+</head>
+<body>
+  <div class="page-layout">
+    <div class="nav-arrow mobile-asist-arrow">
+      <a class="prev" href="#blog"><span>&#60</span></a>
+      <a class="next" href="#code">&#62</a>
+    </div>
+    <!--Top navbar-->
+    <nav class="navbar">
+      <div class="nav-title">
+        <div class="nav-photo">
+          <img src="resources/img/16.1 user.png" alt="Rohan's photo">
+        </div>
+          <a href="#">R O H A N  B I N</a>
+        </div>
+      <button onclick="showSidebar()">
+        <div class="w3-container" onclick="shapeCross(this)">
+          <div class="w3-bar1"></div>
+          <div class="w3-bar2"></div>
+          <div class="w3-bar3"></div>
+        </div>
+      </button>
+    </nav>
+    <!--Side Nabar-->
+    <header id="js--sidebar">
+      <div>
+        <div class="row">
+          <div class="side-photo row">
+            <img src="resources/img/16.1 user.png" alt="user's photo">
+          </div>
+          <div class="side-name">
+            <h2>Rohan<br>Bin</h2>
+          </div>
+        </div>
+        <div class="side-menu row">
+          <a class="pt-trigger active-menu" href="#about-me">About Me</a>
+          <a class="pt-trigger" href="#resume">Resume</a>
+          <a class="pt-trigger" href="#project">Projects</a>
+          <a class="pt-trigger" href="#code">Coding</a>
+          <a class="pt-trigger" href="#blog">Blog</a>
+          <a class="pt-trigger" href="#contact">Contact</a>
+        </div>
+        <div class="social-icon icon-sm">
+          <a href="#"><i class="fab fa-github-square"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="nav-arrow">
+        <a class="prev" href="#blog"><span>&#60</span></a>
+        <a class="next" href="#code">&#62</a>
+      </div>
+    </header>
+    <div class="main no-js">
+      
+      <div id="pt-main" class="pt-perspective">
+        <!--About ME-->
+        <section class="pt-page pt-page-about-me">
+          <div class="intro">
+            <div class="intro-photo">
+            </div>
+            <div class="intro-text">
+              <h6>Full Stack Developer</h6>
+              <h1>R O H A N B I N</h1>
+              <p>
+                Praesent sed aliquam arcu, non accumsan neque. In odio ante, vulputate ac magna vel, pharetra lobortis quam. Duis enim tortor, egestas et felis id, lobortis malesuada magna. Nunc sit amet sagittis nisi, eu semper nisl. Cras ut dictum nisl. Donec tincidunt eget orci.              </p>
+              <p>
+                Aliquam mollis, leo nec commodo facilisis, turpis lorem dapibus erat, sed consectetur nunc nulla ac elit. Suspendisse dictum id dui mollis auctor. Etiam id sapien neque. Cras nec rhoncus sem. Mauris metus ligula, varius vel iaculis at, pulvinar tincidunt magna.              </p>
+              <div><a href="#" class="bg-btn">Download CV</a></div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="block-title">What I Do</h3>
+            </div>
+            <div class="row-2">
+              <div class="info-block">
+                <div class="info-icon">
+                  <i class="fas fa-store"></i>
+                </div>
+                <div class="detail">
+                  <h4>Ecommerce</h4>
+                  <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info-icon">
+                  <i class="far fa-file-code"></i>
+                </div>
+                <div class="detail">
+                  <h4>Web Design</h4>
+                  <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="info-block">
+                <div class="info-icon">
+                  <i class="fab fa-angular"></i>
+                </div>
+                <div class="detail">
+                  <h4>SPA Application</h4>
+                  <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="detail">
+                  <h4>API Design</h4>
+                  <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="block-title">My Interests</h3>
+            </div>
+            <div class="row-interest row">
+              <div class="owl-carousel owl-theme">
+                <div class="interest-block">
+                <div class="interest-icon">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <div class="interest-name">
+                  <h4>Animals</h4>
+                </div>
+                <div class="interest-detail">
+                  <p>I love all kinds of Animals</p>
+                </div>
+              </div>
+              <div class="interest-block">
+                <div class="interest-icon">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <div class="interest-name">
+                  <h4>Animals</h4>
+                </div>
+                <div class="interest-detail">
+                  <p>I love all kinds of Animals</p>
+                </div>
+              </div>
+              <div class="interest-block">
+                <div class="interest-icon">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <div class="interest-name">
+                  <h4>Animals</h4>
+                </div>
+                <div class="interest-detail">
+                  <p>I love all kinds of Animals</p>
+                </div>
+              </div>
+              <div class="interest-block">
+                <div class="interest-icon">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <div class="interest-name">
+                  <h4>Animals</h4>
+                </div>
+                <div class="interest-detail">
+                  <p>I love all kinds of Animals</p>
+                </div>
+              </div>
+              <div class="interest-block">
+                <div class="interest-icon">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <div class="interest-name">
+                  <h4>Animals</h4>
+                </div>
+                <div class="interest-detail">
+                  <p>I love all kinds of Animals</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <!--Resume-->
+        <section class="pt-page pt-page-resume">
+          <div>
+            <div class="content">
+              <div class="super-title">
+                <h2>Resume</h2>
+                <p>You won't regret</p>
+              </div>
+              <div class="row">
+                <h3 class="block-title">My Skill Stack</h3>
+              </div>
+              <div class="skills">
+                <div class="skill-row row">
+                  <div class="skill-block">
+                    <h4>Programming Language</h4>
+                    <h5>C#</h5>
+                    <h5>JavaScript</h5>
+                    <h5>TypeScript</h5>
+                    <h5>Java</h5>
+                    <h5>C</h5>
+                    <h5>PHP</h5>
+                  </div>
+                  <div class="skill-block">
+                    <h4>Mark Up and Style</h4>
+                    <h5>HTML</h5>
+                    <h5>CSS</h5>
+                    <h5>XAML</h5>
+                  </div>
+                  <div class="skill-block">
+                    <h4>Database</h4>
+                    <h5>SQL Server</h5>
+                    <h5>MySQL</h5>
+                  </div>
+                  <div class="skill-block">
+                    <h4>FontEnd Framework</h4>
+                    <h5>Angular</h5>
+                    <h5>JQuery</h5>
+                    <h5>Boostrap</h5>
+                    <h5>Ngx-Boostrap</h5>
+                  </div>
+                </div>
+                <div class="skill-row row">
+                  <div class="skill-block">
+                    <h4>BackEnd Framework</h4>
+                    <h5>ASP.NET Core</h5>
+                    <h5>Entity Framework Core</h5>
+                  </div>
+                  <div class="skill-block">
+                    <h4>Achitecture</h4>
+                    <h5>MVC</h5>
+                    <h5>REST API</h5>
+                  </div>
+                  <div class="skill-block">
+                    <h4>Dev Environment</h4>
+                    <h5>Agile</h5>
+                  </div>
+                  <div class="skill-block">
+                    <h4>Versiont Control</h4>
+                    <h5>Git</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="row">
+                <h3 class="block-title">Relevant Courses</h3>
+              </div>
+              <div class="course-block">
+                <p>Stuctural Programming</p>
+                <p>Object Oriented Programming</p>
+                <p>Data Structure</p>
+                <p>Algorithm</p>
+                <p>Database Management System</p>
+                <p>System Analysis</p>
+                <p>Software Engineering</p>
+                <p>Web Database Programming</p>
+                <p>Advanced Enterprise Java</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="row">
+                <h3 class="block-title">Training</h3>
+              </div>
+              <div class="training-row row">
+                <div class="training-block">
+                  <div>
+                    <div class="training-img">
+                      <img src="resources/img/uxui.png" alt="ux/ui certificate">
+                    </div>
+                    <div class="training-title">
+                      <h4>UX/UI</h4>
+                    </div>
+                    <div class="distrib">
+                      <p>Mobile Games and Application User Experience and User Interface</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="training-block">
+                  <div>
+                    <div class="training-img">
+                      <img src="resources/img/uxui.png" alt="ux/ui certificate">
+                    </div>
+                    <div class="training-title">
+                      <h4>UX/UI</h4>
+                    </div>
+                    <div class="distrib">
+                      <p>Mobile Games and Application User Experience and User Interface</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="training-block">
+                  <div>
+                    <div class="training-img">
+                      <img src="resources/img/uxui.png" alt="ux/ui certificate">
+                    </div>
+                    <div class="training-title">
+                      <h4>UX/UI</h4>
+                    </div>
+                    <div class="distrib">
+                      <p>Mobile Games and Application User Experience and User Interface</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="row">
+                <h3 class="block-title">Education</h3>
+              </div>
+              <div class="edu-block row">
+                <table>
+                  <tr>
+                    <th><h4>Instution</h4></th>
+                    <th><h4>Subject</h4></th>
+                    <th><h4>Certification</h4></th>
+                    <th><h4>Rerult</h4></th>
+                  </tr>
+                  <tr>
+                    <td>City University</td>
+                    <td>CSE</td>
+                    <td>BSc</td>
+                    <td>3.79</td>
+                  </tr>
+                  <tr>
+                    <td>Scristy College of Tangail</td>
+                    <td>Science</td>
+                    <td>HSC</td>
+                    <td>4.10</td>
+                  </tr>
+                  <tr>
+                    <td>Bindhubashini Govt. Boys' Hight School</td>
+                    <td>Science</td>
+                    <td>SSC</td>
+                    <td>4.81</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Project-->
+        <section class="pt-page pt-page-project">
+          <div>
+            <div class="content">
+              <div class="super-title">
+                <h2>Projects</h2>
+                <p>My Works</p>
+              </div>
+              <div class="row">
+                <h3 class="block-title">Top 3 Picks</h3>
+              </div>
+              <div>
+                <div class="pro-block row">
+                  <div class="pro-img ord-1">
+                    <img src="resources\img\projectpic.jpg" alt="project cover">                   
+                  </div>
+                  <div class="pro-detail ord-2">
+                    <h4>Project Title</h4>
+                    <div class="pro-tabs">
+                      <p>topic</p> <p>technology</p> <p>type</p>
+                    </div>
+                    <div class="pro-discrib">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus iste atque, sed nisi culpa in alias id dolorem molestias quisquam voluptatum, dicta qui, ratione impedit vel suscipit. Natus labore soluta ab ipsa a repudiandae sed? Similique, distinctio. Quidem ipsum cupiditate voluptatibus quae doloremque cumque laboriosamenda. Harum perspiciatis explicabo eius cumque natus animi nostrum rerum, architecto minus voluptate, soluta nulla inventore omnis exercitationem nihil ut nobis vel. Minima blanditiis velit </p>
+                    </div>
+                    <div class="pro-button">
+                      <a href="#"><i class="far fa-eye"></i></a>
+                      <a href="#"><i class="fab fa-git-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="pro-block row">
+                  <div class="pro-img">
+                    <img src="resources\img\projectpic.jpg" alt="project cover" href="#">                   
+                  </div>
+                  <div class="pro-detail">
+                    <h4>Project Title</h4>
+                    <div class="pro-tabs">
+                      <p>topic</p> <p>technology</p> <p>type</p>
+                    </div>
+                    <div class="pro-discrib">
+                      <p>Here goes project short discribtion for reader to know what is it about</p>
+                    </div>
+                    <div class="pro-button">
+                      <a href="#"><i class="far fa-eye"></i></a>
+                      <a href="#"><i class="fab fa-git-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="pro-block row">
+                  <div class="pro-img">
+                    <img src="resources\img\projectpic.jpg" alt="project cover">                   
+                  </div>
+                  <div class="pro-detail">
+                    <h4>Project Title</h4>
+                    <div class="pro-tabs">
+                      <p>topic</p> <p>technology</p> <p>type</p>
+                    </div>
+                    <div class="pro-discrib">
+                      <p>Here goes project short discribtion for reader to know what is it about</p>
+                    </div>
+                    <div class="pro-button">
+                      <a href="#"><i class="far fa-eye"></i></a>
+                      <a href="#"><i class="fab fa-git-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="row">
+                <h3 class="block-title">University Final Project</h3>
+              </div>
+              <div>
+                <div class="pro-block row">
+                  <div class="pro-img">
+                    <img src="resources\img\projectpic.jpg" alt="project cover" href="#">                   
+                  </div>
+                  <div class="pro-detail">
+                    <h4>Project Title</h4>
+                    <div class="pro-tabs">
+                      <p>topic</p> <p>technology</p> <p>type</p>
+                    </div>
+                    <div class="pro-discrib">
+                      <p>Here goes project short discribtion for reader to know what is it about</p>
+                    </div>
+                    <div class="pro-button">
+                      <a href="#"><i class="far fa-eye"></i></a>
+                      <a href="#"><i class="fab fa-git-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="row">
+                <h3 class="block-title">All Projects</h3>
+              </div>
+              <div>
+                <div class="pro-block row">
+                  <div class="pro-img">
+                    <img src="resources\img\projectpic.jpg" alt="project cover" href="#">                   
+                  </div>
+                  <div class="pro-detail">
+                    <h4>Project Title</h4>
+                    <div class="pro-tabs">
+                      <p>topic</p> <p>technology</p> <p>type</p>
+                    </div>
+                    <div class="pro-discrib">
+                      <p>Here goes project short discribtion for reader to know what is it about</p>
+                    </div>
+                    <div class="pro-button">
+                      <a href="#"><i class="far fa-eye"></i></a>
+                      <a href="#"><i class="fab fa-git-square"></i></a>
+                    </div>
+                  </div>
+                </div><div class="pro-block row">
+                  <div class="pro-img">
+                    <img src="resources\img\projectpic.jpg" alt="project cover" href="#">                   
+                  </div>
+                  <div class="pro-detail">
+                    <h4>Project Title</h4>
+                    <div class="pro-tabs">
+                      <p>topic</p> <p>technology</p> <p>type</p>
+                    </div>
+                    <div class="pro-discrib">
+                      <p>Here goes project short discribtion for reader to know what is it about</p>
+                    </div>
+                    <div class="pro-button">
+                      <a href="#"><i class="far fa-eye"></i></a>
+                      <a href="#"><i class="fab fa-git-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Coding Challange-->
+        <section class="pt-page pt-page-code">
+          <div class="content">
+            <div class="super-title">
+              <h2>Coding Challenges</h2>
+              <p>Practice makes an man perfect</p>
+            </div>
+            <div class="row">
+              <h3 class="block-title">Demo of Some Solutions</h3>
+            </div>
+            <div class="row code-row first-code-row">
+              <div class="code-block">
+                <a href="">
+                  <div class="code-name">
+                    <h4>Coding Challenge name</h4>
+                  </div>
+                </a>
+                <div class="code-detail">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod perspiciatis, deleniti pariatur a ducimus fuga amet debitis nihil possimus!</p>
+                </div>
+              </div>
+              <div class="code-block">
+                <a href="">
+                  <div class="code-name">
+                    <h4>Coding Challenge name</h4>
+                  </div>
+                </a>
+                <div class="code-detail">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod perspiciatis, deleniti pariatur a ducimus fuga amet debitis nihil possimus!</p>
+                </div>
+              </div><div class="code-block">
+                <a href="">
+                  <div class="code-name">
+                    <h4>Coding Challenge name</h4>
+                  </div>
+                </a>
+                <div class="code-detail">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod perspiciatis, deleniti pariatur a ducimus fuga amet debitis nihil possimus!</p>
+                </div>
+              </div>
+            
+              <div class="code-block">
+                <a href="">
+                  <div class="code-name">
+                    <h4>Coding Challenge name</h4>
+                  </div>
+                </a>
+                <div class="code-detail">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod perspiciatis, deleniti pariatur a ducimus fuga amet debitis nihil possimus!</p>
+                </div>
+              </div>
+              <div class="code-block">
+                <a href="">
+                  <div class="code-name">
+                    <h4>Coding Challenge name</h4>
+                  </div>
+                </a>
+                <div class="code-detail">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod perspiciatis, deleniti pariatur a ducimus fuga amet debitis nihil possimus!</p>
+                </div>
+              </div><div class="code-block">
+                <a href="">
+                  <div class="code-name">
+                    <h4>Coding Challenge name</h4>
+                  </div>
+                </a>
+                <div class="code-detail">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod perspiciatis, deleniti pariatur a ducimus fuga amet debitis nihil possimus!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="block-title">Problem Solved</h3>
+            </div>
+            <div class="code-solved">
+              <h4>Till now </h4><span class="counter total count" >369</span><h4> problem have been solved</h4>
+            </div>
+            <div class="code-list">
+              <div class="row list-row">
+                <div class="list-card">
+                  <h5 class="count">234</h5>
+                  <p>URI</p>
+                </div>
+                <div class="list-card">
+                  <h5 class="count">50</h5>
+                  <p>UVA</p>
+                </div>
+                <div class="list-card">
+                  <h5 class="count">0</h5>
+                  <p>Project Euler</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="block-title">Target</h3>
+            </div>
+            <div class="row target-row">
+              <h6>1000</h6>
+              <div class="Progress">
+                <div class="Bar">37%</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Blog-->
+        <section class="pt-page pt-page-blog">
+          <div class="content">
+            <div class="super-title">
+              <h2>Blogs</h2>
+              <p>Sometime I write</p>
+            </div>
+            <div class="row">
+              <h3 class="block-title">Techinical Artical</h3>
+            </div>
+            <div class="row blog-row">
+              <div class="blog-post">
+                <div class="blog-img">
+                  <img src="resources/img/blog.png" alt="blog">
+                </div>
+                <div class="blog-info">
+                  <h5>5 January 2020</h5>
+                  <h4>Blod Title or Headline</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, fuga. Doloremque ad cumque adipisci labore itaque molestias possimus officia, sed similique deserunt quia, laboriosam distinctio.</p>
+                  <a href="#" class="bg-btn">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="block-title">DevLogs</h3>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="block-title">Travel Blog</h3>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="block-title">Personal Blog</h3>
+            </div>
+          </div>
+        </section>
+        <!--contact-->
+        <section class="pt-page pt-page-contact">
+          <div class="content">
+            <div class="super-title">
+              <h2>Contact</h2>
+              <p>I am willing to hear from you</p>
+            </div>
+            <div class="row">
+              <h3 class="block-title">Personal</h3>
+            </div>
+            <div class="row personal-row">
+              <div class="con-outer">
+                <div class="con-card">
+                  <div class="con-icon"><i class="fas fa-phone-alt"></i></i></div>
+                  <h4>01553501368</h4>
+                </div>
+              </div>
+                <div class="con-outer">
+                  <div class="con-card">
+                    <div class="con-icon"><i class="far fa-envelope"></i></i></div>
+                    <h4>binrohan.cs@gmail.com</h4>
+                  </div>
+                </div>
+                <div class="con-outer">
+                  <div class="con-card">
+                    <div class="con-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Dhaka, Bangladesh</h4>
+                  </div>
+                </div>
+               <div class="con-outer">
+                  <div class="con-card">
+                    <div class="con-icon"><i class="fas fa-phone-alt"></i></i></div>
+                    <h4>01553501368</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <h3 class="block-title">Mail Me:</h3>
+            </div>
+            <form action="">
+              <div class="row msg-row">
+                <div class="msg-left">
+                
+                  <input type="text" name="name" id="" class="required" placeholder="Full Name" required>
+                  <input type="email" name="email" id="" class="required" placeholder="Email Address" required>
+                  <input type="text" name="subject" id="" placeholder="Subject">
+                  <div class="row">
+                    <button type="submit" class="bg-btn">Send Message</button>
+                  </div>
+                </div>
+                <div class="msg-right">
+                  <textarea name="message" id="" cols="30"  placeholder="Message"></textarea>
+                </div>
+              </div>
+              
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!--Scripts links-->
+  <!-- Scripts Links Vendors-->
+  <script src="vendors/js/jquery.js"></script>
+  <script src="vendors/js/transition.js"></script>
+  <script src="vendors/js/owl.carousel.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <!-- Scripts Links Owns-->
+  <script src="resources/js/script.js"></script>
+</body>
+</html>
