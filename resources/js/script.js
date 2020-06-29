@@ -60,7 +60,7 @@ $('.owl-carousel').owlCarousel({
       0:{
           items:1
       },
-      600:{
+      768:{
           items:2
       },
       1200:{
@@ -93,4 +93,21 @@ $('.count').each(function () {
 //     $('.count').addClass('counter');
 //     $('.list-card h5').addClass('counter');
 //   }
+// });
+// function onReady(callback) {
+//   var intervalId = window.setInterval(function() {
+//     if (document.getElementsByTagName('body')[0] !== undefined) {
+//       window.clearInterval(intervalId);
+//       callback.call(this);
+//     }
+//   }, 1000);
+// }
+
+// function setVisible(selector, visible) {
+//   document.querySelector(selector).style.display = visible ? 'block' : 'none';
+// }
+
+// onReady(function() {
+//   setVisible('.page-layout', true);
+//   setVisible('#loading', false);
 // });

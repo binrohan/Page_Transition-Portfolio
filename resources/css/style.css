@@ -294,6 +294,7 @@ section::-webkit-scrollbar-thumb {
 .row-2 {
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
 }
 .info-block {
   width: 50%;
@@ -369,9 +370,9 @@ section::-webkit-scrollbar-thumb {
 .skill-row {
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
-  flex-direction: row;
 }
 .skill-row:last-child {
   margin: 0;
@@ -415,6 +416,7 @@ section::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: start;
   align-items: stretch;
+  flex-wrap: wrap;
 }
 .training-block {
   width: 33%;
@@ -457,7 +459,8 @@ tr:nth-child(even) {
 /* Project Starts */
 .pro-block{
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 25px;
 }
 .pro-block:last-child{
@@ -469,8 +472,18 @@ tr:nth-child(even) {
   height: 300px;
   margin-right: 25px;
   display: inline-block;
+  position: relative;
   background-color: skyblue;
   transition: box-shadow 500ms;
+}
+.color{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(0deg, rgba(37,32,125,0.8) 9%, rgba(9,9,121,0.7) 24%, rgba(0,212,255,0.603536482952556) 88%);
+  transition: height 1500ms ease-in-out;
 }
 .pro-img img{
   width: 100%;
@@ -479,13 +492,19 @@ tr:nth-child(even) {
 .pro-img:hover{
   box-shadow: 0 12px 17px rgba(0,0,0,.12);
 }
+.pro-img:hover .color{
+  height: 20%;
+}
 .pro-detail{
-  width: 970px;
+  width: 100%;
   height: 300px;
   padding: 25px;
-  position: relative;
-  display: inline-block;
-  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--background-dark);
 }
 .pro-tabs{
   padding: 10px 0;
@@ -499,17 +518,19 @@ tr:nth-child(even) {
   background-color: var(--feature-color);
 }
 .pro-button{
-  left: 0%;
-  bottom: 0%;
-  margin: 25px;
+  width: 100%;
   font-size: 25px;
+  bottom: 0;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
 }
 .pro-button a{
-  padding: 5px 35px;
-  margin-right: 5px;
-  display: inline-block;
-  border: 2px solid var(--feature-color);
+  padding: 15px 35px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
   background-color: #ececec;
   transition: background-color 300ms, color 250ms;
 }
@@ -531,7 +552,7 @@ tr:nth-child(even) {
 }
 .code-block{
   width: 30%;
-  min-width: 350px;
+  /* min-width: 350px; */
   padding: 10px;
   margin-bottom: 20px;
   /* margin: 15px 15px 10px 0; */
@@ -565,6 +586,7 @@ tr:nth-child(even) {
   display: flex;
   margin-top: 50px; 
   justify-content: space-around;
+  flex-wrap: wrap;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
   background-color: var(--background-dark);
 }
@@ -615,7 +637,6 @@ tr:nth-child(even) {
   max-width: 30rem;
   height: 20rem;
   /* transform: translateX(-45px); */
-  position: relative;
   transition: transform 1500ms;
 }
 .blog-img img{
@@ -647,6 +668,7 @@ tr:nth-child(even) {
 .personal-row{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .con-outer{
   width: 25%;
@@ -675,7 +697,6 @@ tr:nth-child(even) {
 }
 /* Message */
 .msg-row{
-  padding-bottom: 70px;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -683,16 +704,25 @@ tr:nth-child(even) {
 .msg-left{
   width: 50%;
   padding-right: 15px;
+  padding-bottom: 20px;
 }
 .msg-right{
   width: 50%;
   padding-left: 15px;
+  padding-bottom: 20px;
 }
 input, textarea{
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #dfdfdf;
+}
+input:last-child{
+  margin: 0;
+}
+.pt-page-contact{
+  height: 100vh;
+  background-color: var(--background-light);
 }
 textarea{
   min-height: 100%;
@@ -746,3 +776,16 @@ header {
 
 /** One Time Calls **/
 /* width */
+/* #loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+} */
