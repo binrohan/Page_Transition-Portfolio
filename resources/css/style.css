@@ -551,6 +551,11 @@ tr:nth-child(even) {
   transform: translateY(-50%);
   box-shadow: 10px 11px 20px -1px rgba(181,181,181,1);
   background-color: #e0e0e0;
+  transition: background-color 300ms, color 300ms;
+}
+.code-name:hover{
+  background-color: var(--feature-color);
+  color: var(--background-light);
 }
 .code-detail{
   margin-top: -15px;
